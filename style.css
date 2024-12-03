@@ -1,0 +1,56 @@
+body {
+    font-family: 'Roboto', 'Open Sans', Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 20px;
+}
+.nav {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    word-spacing: 15px; 
+}
+.nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 2px; /* This adds spacing between letters */
+}
+.profile-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+/* .profile-left {
+    width: 60%;
+} */
+.profile-image {
+    max-width: 35%;
+    /* border-radius: 50%; */
+}
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+.social-links a {
+    text-decoration: none;
+    color: #333;
+}
+h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+.teaching-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+.research-list {
+    list-style-type: none;
+    padding-left: 0;
+}
