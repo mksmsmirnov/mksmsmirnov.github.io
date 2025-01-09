@@ -25,10 +25,14 @@ body {
     align-items: flex-start;
     margin-bottom: 40px;
 }
+
 .profile-left {
-    margin-right: -20px;  /* Using negative margin to pull content closer */
+    flex: 0 0 auto;  /* Prevents flex from adding extra space */
+    margin-right: -30px;  /* Adjust this value to get desired spacing */
 }
+
 .profile-text {
+    flex: 1;
     margin-left: 0;
     padding-left: 0;
 }
