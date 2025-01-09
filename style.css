@@ -31,7 +31,7 @@ body {
 } */
 .profile-image {
     max-width: 95%;
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
 .social-links {
     display: flex;
