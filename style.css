@@ -21,23 +21,21 @@ body {
     letter-spacing: 2px; /* This adds spacing between letters */
 }
 .profile-container {
-    display: flex;
-    align-items: flex-start;
+    position: relative;
     margin-bottom: 40px;
 }
-
 .profile-left {
-    flex: 0 0 auto;  /* Prevents flex from adding extra space */
-    margin-right: -30px;  /* Adjust this value to get desired spacing */
+    position: relative;
+    width: 60%;
 }
-
 .profile-text {
-    flex: 1;
-    margin-left: 0;
-    padding-left: 0;
+    position: absolute;
+    left: 50%;  /* Adjust this value to control overlap */
+    top: 0;
+    width: 55%;
 }
 .profile-image {
-    max-width: 60%;
+    max-width: 70%;
     margin-right: 10px;
 }
 .school {
