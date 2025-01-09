@@ -20,6 +20,9 @@ body {
     font-weight: bold;
     letter-spacing: 2px; /* This adds spacing between letters */
 }
+.paper {
+    font-weight: bold;
+}
 .profile-container {
     position: relative;
     margin-bottom: 40px;
