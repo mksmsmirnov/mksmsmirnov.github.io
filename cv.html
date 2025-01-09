@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <title>Maksim Smirnov - CV</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .cv-container {
+            width: 100%;
+            margin-top: 20px;
+        }
+        
+        .pdf-viewer {
+            width: 100%;
+            height: 800px;  /* You can adjust this height */
+            border: none;
+        }
+    </style>
 </head>
 <body>
     <div class="nav">
@@ -16,8 +28,12 @@
     <h1>Curriculum Vitae</h1>
 
     <p>Please see my CV: 
-        <a href="https://www.dropbox.com/scl/fi/4c3rua96ighjrepo51rfm/CV_Maksim_Smirnov.pdf?rlkey=r65omkjqp585vm6ewxweojqvz&st=9lzmajzr&dl=0">CV</a>
+        <a href="CV_Maksim_Smirnov.pdf">Download PDF</a>
     </p>
+
+    <div class="cv-container">
+        <embed src="CV_Maksim_Smirnov.pdf" type="application/pdf" class="pdf-viewer">
+    </div>
 
 </body>
 </html>
