@@ -3,30 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <title>Maksim Smirnov</title>
+     <!-- Add MathJax -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+     <script type="text/x-mathjax-config">
+         MathJax.Hub.Config({
+             tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+         });
+     </script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="nav">
         <a href="./">Main</a>
         <a href="./cv">CV</a>
-        <a href="./research">Research</a>
-        <a href="./teaching">Teaching</a>
+        <!-- <a href="./research">Research</a>
+        <a href="./teaching">Teaching</a> -->
     </div>
 
-    <div class="profile-container">
-        <div class="profile-left">
-            <img src="photo.jpg" alt="My Photo" class="profile-image">
-            <div class="social-links">
-                <!-- <a href="https://x.com/yourhandle">X</a> -->
-                <a href="https://www.linkedin.com/in/maksim-smirnov-3ab741310/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_verification_details%3Bvm3dSb0RQ36KGWIQ7GdkTA%3D%3D">LinkedIn</a>
-                <a href="mailto:Maksim.Smirnov@cerge-ei.cz">Maksim.Smirnov@cerge-ei.cz</a>
+    <div id="main" class="panel">
+        <div class="profile-container">
+            <div class="profile-left">
+                <img src="photo.jpg" alt="My Photo" class="profile-image">
+                <div class="social-links">
+                    <!-- <a href="https://x.com/yourhandle">X</a> -->
+                    <a href="https://www.linkedin.com/in/maksim-smirnov-3ab741310/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_verification_details%3Bvm3dSb0RQ36KGWIQ7GdkTA%3D%3D">LinkedIn</a>
+                    <a href="mailto:Maksim.Smirnov@cerge-ei.cz">Maksim.Smirnov@cerge-ei.cz</a>
+                </div>
+            </div>
+            <div class="profile-text">
+                <p>
+                    Welcome! I am currently a PhD student at <a href="https://www.cerge-ei.cz/">CERGE-EI</a>. I specialize in econometrics, and my research focuses on instrumental variables estimation, dimension asymptotics, and clustering. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="research" class="panel">
+        <h2>Publications</h2>
+        <div class="research-list">
+            <div class="research-item">
+                <p>Off-diagonal elements of projection matrices and dimension asymptotics. <i>Economics Letters<i> 239 (2024): 111761. </i>(with Stanislav Anatolyev)</i> [<a href="https://doi.org/10.1016/j.econlet.2024.111761">link</a>]</p>
+                <p class="explanation">We provide insights on asymptotic behavior of the off-diagonal elements of projection matrices in settings, where the dimension of underlying vectors grows with the sample size. Under designs favorable to application of the random matrix theory, the off-diagonal elements are asymptotically normal with a simple variance expression. We also discuss the robustness of the result to deviations of the design from the ideal setup.</p>
+            </div>
+        </div>
+        <h2>Work in Progress</h2>
+        <div class="research-list">
+            <div class="research-item">
+                <p>Unbiased estimation in judge designs</p>
+                <p class="explanation">I study judge designs that are a popular empirical setup, in which randomization of cases to judges allows the identification and estimation of causal effects of pretrial detention. I show that workhorse two-stage least-squares estimator and jackknife instrumental variables estimators are biased in finite samples and propose an alternative unbiased estimator that builds on non-linearity of the first stage, randomized assignment mechanism and latency of judge strictness.</p>
+            </div>
+            <div class="research-item">
+                <p>Asymptotics of large-dimensional projection matrices <i>(with Stanislav Anatolyev)</i></p>
+                <p class="explanation">
+                    We characterize the joint asymptotic behavior of diagonal and off-diagonal elements of projection matrices, say $P = Z(Z'Z)^{-1}Z'$, whose underlying dimension $\ell$ is asymptotically proportional to sample size $n$, that is, $\ell/n \xrightarrow[]{} \alpha$ as $n \xrightarrow[]{} \infty$, with the aspect ratio $\alpha \in (0,1)$, under the rotated i.i.d. assumption for elements of $Z$. The rate of
+                    convergence is $\sqrt{n}$, and the limiting distribution is multivariate centered Gaussian. The formulas for the asymptotic variances and covariances are expressed as functions
+                    of $\alpha$ and moments of elements of $Z$. The instrumental tools in deriving the asymptotic
+                    results are the Woodbury matrix identity, CLT for quadratic and bilinear forms, and
+                    elements of the random matrix theory such as the Marchenko-Pastur law.                    
+                </p>
+            </div>
+            <div class="research-item">
+                <p>Many instruments estimation and inference under clustered dependence <i>(with Stanislav Anatolyev)</i>
+                    [<a href="https://www.dropbox.com/scl/fi/md413gu31b6sbeipzdiih/cjiv_slides.pdf?rlkey=auj5q4nwdylzdcsiplu6y1x58&st=q7ovjo1s&dl=0">slides</a>]
+                </p>
+                <p class="explanation">We study many weak instruments in a heteroskedastic environment under
+                    clustering. We
+                    show that clustering either deems the jackknife instrumental variables estimation inconsistent, or makes its inferences hugely distorted. We suggest, instead of following
+                    the "save the Jackknife" approach, an alternative approach, which is computationally
+                    attractive and allows general structures of intra-cluster correlations. We use the natural extension of jackknifing, the leave-cluster-out methodology, applied to the instrument projection matrix, which allows one to dispose of the cross-cluster dependencies
+                    in the influence function of the structural parameter estimator. We set out a formal
+                    asymptotic framework to analyze the proposed cluster-jackknife instrumental variables
+                    (CJIV) estimator, with an increasing number of clusters, possibly increasing heterogeneous cluster sizes, and possible presence of many weak instruments. We prove a
+                    central limit theorem for the influence function embedded in the CJIV estimator, and
+                    show consistency of the associated CJIV variance estimator. We study the importance
+                    of instrument design on the properties of CJIV, run a simulation study revealing its
+                    finite sample properties, and compare with other estimators in relevant empirical contexts.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="teaching" class="panel">
+        <h2>CERGE-EI</h2>
+        <div class="teaching-list">
+            <div class="teaching-item">
+                <p>Complementary mathematics (graduate); lecturer, 2022-2024</p>
+            </div>
+            <div class="teaching-item">
+                <p>Econometrics I (graduate); teaching assistant, 2022-2024</p>
+            </div>
+            <div class="teaching-item">
+                <p>Econometrics for macroeconomic and financial data (graduate); teaching assistant, 2023</p>
+            </div>
+            <div class="teaching-item">
+                <p>Time series econometrics (graduate); teaching assistant, 2022</p>
             </div>
         </div>
 
-        <div class="profile-text">
-            <p>
-                Welcome! I am currently a PhD student at <a href="https://www.cerge-ei.cz/">CERGE-EI</a>. I specialize in econometrics, and my research focuses on instrumental variables estimation, dimension asymptotics, and clustering. 
-            </p>
+        <h2>Higher School of Economics</h2>
+        <div class="teaching-list">
+            <div class="teaching-item">
+                <p>Dynamic systems in economics (undergraduate); teaching assistant, 2019</p>
+            </div>
         </div>
     </div>
 </body>
