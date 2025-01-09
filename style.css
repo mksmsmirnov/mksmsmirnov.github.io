@@ -25,9 +25,9 @@ body {
     align-items: flex-start;
     gap: 20px;
 }
-/* .profile-left {
+.profile-left {
     width: 60%;
-} */
+}
 .profile-image {
     max-width: 35%;
     /* border-radius: 50%; */
