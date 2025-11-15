@@ -54,6 +54,7 @@ a:not(.nav a):hover {
 .profile-image {
     max-width: 115%;
     margin-right: 10px;
+    margin-top: 10px;
 }
 
 .school {
@@ -102,5 +103,6 @@ h2 {
     margin-bottom: 40px;
 
 }
+
 
 
